@@ -1,0 +1,376 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20220305220852
+Username: KYLE-PC\ksrin
+RunAs User: KYLE-PC\ksrin
+Configuration Name: 
+Machine: KYLE-PC (Microsoft Windows NT 10.0.19042.0)
+Host Application: C:\WINDOWS\SysWOW64\WindowsPowerShell\v1.0\powershell.exe -NoExit -Command & { Import-Module 'C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\Tools\Microsoft.VisualStudio.DevShell.dll'; Enter-VsDevShell -SetDefaultWindowTitle -InstallPath 'C:\Program Files\Microsoft Visual Studio\2022\Enterprise' -StartInPath 'C:\Users\ksrin\Documents\TINFO200\StudentDB' }
+Process ID: 30440
+PSVersion: 5.1.19041.1237
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.1237
+BuildVersion: 10.0.19041.1237
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is RELEASE-TEST-OUTPUT.txt
+PS C:\Users\ksrin\Documents\TINFO200\StudentDB> more .\STUDENTDB_DATAFILE.txt
+StudentDB.Undergrad
+Alice
+Anderson
+3.9
+aanderson@uw.edu
+3/2/2022 3:26:34 AM
+Freshman
+Information Technology
+StudentDB.GradStudent
+Bob
+Bradshaw
+3.7
+bbradshaw@uw.edu
+3/2/2022 3:26:34 AM
+5000.00
+Dr. Sam Chung
+StudentDB.Undergrad
+Carlos
+Castaneda
+3.5
+ccastaneda@uw.edu
+3/2/2022 3:26:34 AM
+Junior
+Computer Science
+StudentDB.GradStudent
+David
+Davidson
+2.5
+ddavidson@uw.edu
+3/2/2022 3:26:34 AM
+6000.99
+Dr. Donald Chinn
+StudentDB.Undergrad
+Erik
+Ericson
+3.1
+eericson@uw.edu
+3/5/2022 7:33:50 PM
+Junior
+Communications
+StudentDB.GradStudent
+Freddy
+Fazbear
+4
+ffazbear@uw.edu
+3/5/2022 7:35:20 PM
+14000.00
+Dr. William Afton
+StudentDB.Undergrad
+Geoff
+Gardner
+2.8
+ggardner@uw.edu
+3/5/2022 7:36:51 PM
+Freshman
+Pre-Sciences
+StudentDB.GradStudent
+Isaac
+Irving
+3.1
+iirving@uw.edu
+3/5/2022 10:06:36 PM
+3200.00
+Dr. Doom
+PS C:\Users\ksrin\Documents\TINFO200\StudentDB> .\bin\Release\StudentDB.exe
+
+Welcome to the StudentDB program! In this program you will
+be given the ability to view and edit the contents of a
+database of students. Every student will have a first name,
+last name, gpa, email, enrollement date/time. Undergrads
+will also have their year rank (freshman, sophomore, junior,
+senior) and their major listed. Grad students will have their tuition
+credit and faculty advisor listed. The students email will be used
+as their primary identification key when searching the database.
+All aspects of a student's information will be modifiable except
+their enrollement data and email. The contents of the student
+database will be saved to a text file upon exiting the program.
+
+Thank you for using the StudentDB program!
+
+**************************************
+******** Student DB Main Menu ********
+**************************************
+[F]ind a student record for review
+[C]reate new student record
+[M]odify an existing student record
+[D]elete an existing student record
+[P]rint all records
+[S]ave all records without exit
+[E]xit the application (saves and exits)
+
+User Selection (type a letter in brackets above): f
+ENTER email address (primary key) to search: bbradshaw@uw.edu
+FOUND email address: bbradshaw@uw.edu
+
+**************************************
+******** Student DB Main Menu ********
+**************************************
+[F]ind a student record for review
+[C]reate new student record
+[M]odify an existing student record
+[D]elete an existing student record
+[P]rint all records
+[S]ave all records without exit
+[E]xit the application (saves and exits)
+
+User Selection (type a letter in brackets above): c
+ENTER email address (primary key) to search: jjordan@uw.edu
+jjordan@uw.edu NOT FOUND
+Creating new student with email addess: jjordan@uw.edu
+ENTER the first name: John
+ENTER the last name: Jordan
+ENTER the current grade point average: 3.6
+[U]ndergrad or [G]rad student?: U
+[1]Freshman [2]Sophomore [3]Junior [4]Senior
+ENTER year/rank in school from above choices: 4
+ENTER degree major: Graphic Arts
+Adding student to database:
+*********** Student Record ***********
+First Name: John
+ Last Name: Jordan
+       GPA: 3.6
+     Email: jjordan@uw.edu
+  Enrolled: 3/5/2022 10:10:31 PM
+      Year: Senior
+     Major: Graphic Arts
+
+
+**************************************
+******** Student DB Main Menu ********
+**************************************
+[F]ind a student record for review
+[C]reate new student record
+[M]odify an existing student record
+[D]elete an existing student record
+[P]rint all records
+[S]ave all records without exit
+[E]xit the application (saves and exits)
+
+User Selection (type a letter in brackets above): m
+ENTER email address (primary key) to search: ddavidson@uw.edu
+FOUND email address: ddavidson@uw.edu
+Modifying student with email: ddavidson@uw.edu
+Please enter the new information excluding enrollement date and email for ddavidson@uw.edu
+ENTER the first name: Dave
+ENTER the last name: Davidson
+ENTER the current grade point average: 3.45
+ENTER tuition reimbursement: 6850.00
+ENTER faculty advisor: Dr. Mundo
+
+Successfully modified student: ddavidson@uw.edu
+
+**************************************
+******** Student DB Main Menu ********
+**************************************
+[F]ind a student record for review
+[C]reate new student record
+[M]odify an existing student record
+[D]elete an existing student record
+[P]rint all records
+[S]ave all records without exit
+[E]xit the application (saves and exits)
+
+User Selection (type a letter in brackets above): d
+ENTER email address (primary key) to search: iirving@uw.edu
+FOUND email address: iirving@uw.edu
+RECORD FOUND AND REMOVED.
+No longer in database: iirving@uw.edu
+
+
+**************************************
+******** Student DB Main Menu ********
+**************************************
+[F]ind a student record for review
+[C]reate new student record
+[M]odify an existing student record
+[D]elete an existing student record
+[P]rint all records
+[S]ave all records without exit
+[E]xit the application (saves and exits)
+
+User Selection (type a letter in brackets above): p
+********* All Student Records *********
+*********** Student Record ***********
+First Name: Alice
+ Last Name: Anderson
+       GPA: 3.9
+     Email: aanderson@uw.edu
+  Enrolled: 3/2/2022 3:26:34 AM
+      Year: Freshman
+     Major: Information Technology
+
+*********** Student Record ***********
+First Name: Bob
+ Last Name: Bradshaw
+       GPA: 3.7
+     Email: bbradshaw@uw.edu
+  Enrolled: 3/2/2022 3:26:34 AM
+    Credit: 5000.00
+   Advisor: Dr. Sam Chung
+
+*********** Student Record ***********
+First Name: Carlos
+ Last Name: Castaneda
+       GPA: 3.5
+     Email: ccastaneda@uw.edu
+  Enrolled: 3/2/2022 3:26:34 AM
+      Year: Junior
+     Major: Computer Science
+
+*********** Student Record ***********
+First Name: Dave
+ Last Name: Davidson
+       GPA: 3.45
+     Email: ddavidson@uw.edu
+  Enrolled: 3/2/2022 3:26:34 AM
+    Credit: 6850.00
+   Advisor: Dr. Mundo
+
+*********** Student Record ***********
+First Name: Erik
+ Last Name: Ericson
+       GPA: 3.1
+     Email: eericson@uw.edu
+  Enrolled: 3/5/2022 7:33:50 PM
+      Year: Junior
+     Major: Communications
+
+*********** Student Record ***********
+First Name: Freddy
+ Last Name: Fazbear
+       GPA: 4
+     Email: ffazbear@uw.edu
+  Enrolled: 3/5/2022 7:35:20 PM
+    Credit: 14000.00
+   Advisor: Dr. William Afton
+
+*********** Student Record ***********
+First Name: Geoff
+ Last Name: Gardner
+       GPA: 2.8
+     Email: ggardner@uw.edu
+  Enrolled: 3/5/2022 7:36:51 PM
+      Year: Freshman
+     Major: Pre-Sciences
+
+*********** Student Record ***********
+First Name: John
+ Last Name: Jordan
+       GPA: 3.6
+     Email: jjordan@uw.edu
+  Enrolled: 3/5/2022 10:10:31 PM
+      Year: Senior
+     Major: Graphic Arts
+
+***** END of Student Record Data *****
+
+**************************************
+******** Student DB Main Menu ********
+**************************************
+[F]ind a student record for review
+[C]reate new student record
+[M]odify an existing student record
+[D]elete an existing student record
+[P]rint all records
+[S]ave all records without exit
+[E]xit the application (saves and exits)
+
+User Selection (type a letter in brackets above): s
+Now saving all student records to the output file...
+Done writing all records - file has been closed
+
+**************************************
+******** Student DB Main Menu ********
+**************************************
+[F]ind a student record for review
+[C]reate new student record
+[M]odify an existing student record
+[D]elete an existing student record
+[P]rint all records
+[S]ave all records without exit
+[E]xit the application (saves and exits)
+
+User Selection (type a letter in brackets above): e
+Now saving all student records to the output file...
+Done writing all records - file has been closed
+PS C:\Users\ksrin\Documents\TINFO200\StudentDB> more .\STUDENTDB_DATAFILE.txt
+StudentDB.Undergrad
+Alice
+Anderson
+3.9
+aanderson@uw.edu
+3/2/2022 3:26:34 AM
+Freshman
+Information Technology
+StudentDB.GradStudent
+Bob
+Bradshaw
+3.7
+bbradshaw@uw.edu
+3/2/2022 3:26:34 AM
+5000.00
+Dr. Sam Chung
+StudentDB.Undergrad
+Carlos
+Castaneda
+3.5
+ccastaneda@uw.edu
+3/2/2022 3:26:34 AM
+Junior
+Computer Science
+StudentDB.GradStudent
+Dave
+Davidson
+3.45
+ddavidson@uw.edu
+3/2/2022 3:26:34 AM
+6850.00
+Dr. Mundo
+StudentDB.Undergrad
+Erik
+Ericson
+3.1
+eericson@uw.edu
+3/5/2022 7:33:50 PM
+Junior
+Communications
+StudentDB.GradStudent
+Freddy
+Fazbear
+4
+ffazbear@uw.edu
+3/5/2022 7:35:20 PM
+14000.00
+Dr. William Afton
+StudentDB.Undergrad
+Geoff
+Gardner
+2.8
+ggardner@uw.edu
+3/5/2022 7:36:51 PM
+Freshman
+Pre-Sciences
+StudentDB.Undergrad
+John
+Jordan
+3.6
+jjordan@uw.edu
+3/5/2022 10:10:31 PM
+Senior
+Graphic Arts
+PS C:\Users\ksrin\Documents\TINFO200\StudentDB> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20220305221141
+**********************

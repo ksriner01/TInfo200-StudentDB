@@ -1,0 +1,64 @@
+StudentDB.Undergrad
+Alice
+Anderson
+3.9
+aanderson@uw.edu
+3/2/2022 3:26:34 AM
+Freshman
+Information Technology
+StudentDB.GradStudent
+Bob
+Bradshaw
+3.7
+bbradshaw@uw.edu
+3/2/2022 3:26:34 AM
+5000.00
+Dr. Sam Chung
+StudentDB.Undergrad
+Carlos
+Castaneda
+3.5
+ccastaneda@uw.edu
+3/2/2022 3:26:34 AM
+Junior
+Computer Science
+StudentDB.GradStudent
+Dave
+Davidson
+3.45
+ddavidson@uw.edu
+3/2/2022 3:26:34 AM
+6850.00
+Dr. Mundo
+StudentDB.Undergrad
+Erik
+Ericson
+3.1
+eericson@uw.edu
+3/5/2022 7:33:50 PM
+Junior
+Communications
+StudentDB.GradStudent
+Freddy
+Fazbear
+4
+ffazbear@uw.edu
+3/5/2022 7:35:20 PM
+14000.00
+Dr. William Afton
+StudentDB.Undergrad
+Geoff
+Gardner
+2.8
+ggardner@uw.edu
+3/5/2022 7:36:51 PM
+Freshman
+Pre-Sciences
+StudentDB.Undergrad
+John
+Jordan
+3.6
+jjordan@uw.edu
+3/5/2022 10:10:31 PM
+Senior
+Graphic Arts

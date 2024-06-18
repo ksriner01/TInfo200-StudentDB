@@ -1,0 +1,7 @@
+C:\Users\ksrin\Documents\TINFO200\StudentDB\bin\Debug\StudentDB.exe.config
+C:\Users\ksrin\Documents\TINFO200\StudentDB\bin\Debug\StudentDB.exe
+C:\Users\ksrin\Documents\TINFO200\StudentDB\bin\Debug\StudentDB.pdb
+C:\Users\ksrin\Documents\TINFO200\StudentDB\obj\Debug\StudentDB.csproj.SuggestedBindingRedirects.cache
+C:\Users\ksrin\Documents\TINFO200\StudentDB\obj\Debug\StudentDB.csproj.CoreCompileInputs.cache
+C:\Users\ksrin\Documents\TINFO200\StudentDB\obj\Debug\StudentDB.exe
+C:\Users\ksrin\Documents\TINFO200\StudentDB\obj\Debug\StudentDB.pdb
